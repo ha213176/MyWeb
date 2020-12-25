@@ -1,0 +1,16 @@
+#TopText{
+	background-color:#DEFFFF;
+	padding:20px;
+	border:3px #0000E0 solid;
+	margin:0px;
+	font-size:large
+}
+
+.Topl{
+	
+	text-align:left;
+}
+
+.Topr{
+	text-align:right;
+}
