@@ -12,14 +12,54 @@
 	</div>
 	
 	<div class="content" text-align="left" " id="content">
-		<h3>標題</h3>
-		<p>
-		
-		</p>
+		<table border="0" width="85%">
+			<tr><td></td>
+				<h3 class="txt">C語言基礎語法教學</h3>
+				<p class="txt">
+					我們先寫一個最簡單的範例，在螢幕上輸出 Hello!World! 
+				</p>
+			</td></tr><tr><td>
+				<img src="hello.png" class="txt"><br>
+			</td></tr><tr><td>
+				<p class="txt">我們先看第一行</p>
+			</td></tr><tr><td>
+				<img src="include.png" class="txt"><br>
+			</td></tr><tr><td>
+				<p class="txt">
+					#include 是巨集（Macro）前置處理器指令（Preprocessor directive），
+					它告訴編譯器（Compiler）這個程式會用到 stdio.h 這個標頭檔（Header file）定義的函式（Function），
+					以便正確地編譯程式中使用到的程式庫函式，被含括的標頭檔內容，會被插入 #include 的位置，然後再進行編譯。<br>
+					簡單地說，主控台的輸入輸出功能就定義在這個檔案中，
+					這之後還會詳細說明，現在請先記得，要在主控台進行輸入輸出，這一行一定要寫。<br>
+
+					接下來看主函式（Main function）的部份，在 C 程式中，程式的進入點（Entry point）是 main() 這個函式：<br>
+				</p>
+			</td></tr><tr><td>
+				<img src="main.png" class="txt"><br>
+			</td></tr><tr><td>
+				<p class="txt">
+				其中 int 表示這個程式執行完畢後會傳回整數（Integer），括號的位置可設置參數列，
+				之後會學到，在執行程式時，可同時將相關引數傳遞給程式。目前並不需要傳遞引數，因此括號中可設定 void，
+				表示程式不接收任何引數。<br>
+
+				程式的最後一行是 return 0，也就是程式結束後傳回 0，在不成文的規定中，程式結束會傳回一個數值，
+				通常 0 表示程式正常結束，你可以讓其他程式或 shell 來取得程式的傳回值，以進行進一步的處理。<br>
+
+				不過，在 C99/C11 之後，如果沒有在最後撰寫 return 0，預設就是傳回 0 了，你可以省去這個動作。<br>
+				</p>
+			</td></tr><tr><td>
+				<img src="printf.png" class="txt"><br>
+			</td></tr><tr><td>
+				<p class="txt">
+				在 C 程式中，每一個陳述（Statement）結束都必須使用分號（;），
+				printf()是 C 提供的標準輸出函式，如果要輸出文字至螢幕上，可以使用雙引號包括文字並寫至 printf 的括號之間。<br>
+				</p>
+			</td></tr>
+		</table>
 	</div>
 	
 	<!--討論區-->
-
+	<br><br>
 	<div id="disqus_thread"></div>
 <script>
     /**
