@@ -4,44 +4,96 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="CSS/index.css" type="text/css">
 	<link rel="stylesheet" href="CSS/normal.css" type="text/css">
+	<script language="JavaScript">
+	function ShowTime(){
+	　var NowDate=new Date();
+	　var h=NowDate.getHours();
+	　var m=NowDate.getMinutes();
+	　document.getElementById('showbox').innerHTML = h+'時'+m+'分';
+	　setTimeout('ShowTime()',1000);
+	}
+	</script>
 </head>
-<body>
+<body onload="ShowTime()">
 	<div id="TopText">
 		<a href="index.html" class="Topl" align="left" size="10%">首頁</a>
 		<a href="./artical/index.html" class="Topr" align="right" size="10%">文章區</a>
 	</div>
 	<!--<iframe src="./artical/index.html" height="100%" width="100%" id="frame_full" frameborder="0" scrolling="auto"></iframe>
 	-->
-  <div class="content" width="100px text-align="left">
-	<div >
-		<h1>a</h1>
+	
+	<li width="30%" >
+		<ul>
+			現在時間:
+			<div id="showbox"></div>
+		</ul>
+	</li>
+	
+	
+<div>
+  <div class="content" text-align:center" id="content">
+	<div class="ct_ele">
+		<table border="1" rules="rows" width="90%" align="center">
+		<caption><font size="22px" id="spacial">推薦文章</font></caption>
+			<tr>
+				<th width="30%"><img src="picture/CLanguage.jpg"></th>
+				<th>
+				<h3 aligh="center">
+					<a href="/artical/tutoral/a_t_001.html">C語言基礎語法教學
+					</a></h3>
+					<p>C 語言是許多大專院校入門程式設計的必學程式語言也是一個通用型的程式語言，
+					廣泛應用於嵌入式系統軟體、應用開發上，算是歷史悠久但又保持長青的程式語言。
+					許多的程式語言或多或少都有借鏡 C 語言的設計思想與哲學，儘管如此若是在工作場合比較少使用 C 語言進行開發的話，
+					時間一久就會容易生疏。偶爾適時複習一下編譯器和 C 語言的使用方式也是一種調劑身心的方式？
+					本文就透過簡明 C 語言入門教學快速複習 C 語言語法的重要特性，方便讀者複習查詢使用。
+					</p>
+					
+				</th>
+			</tr>
+			<tr>
+				<th width="30%"><img src="picture/CLanguage.jpg"></th>
+				<th>
+				<h3 aligh="center">
+					<a href="/artical/tutoral/a_t_001.html">C語言基礎語法教學
+					</a></h3>
+					<p>C 語言是許多大專院校入門程式設計的必學程式語言也是一個通用型的程式語言，
+					廣泛應用於嵌入式系統軟體、應用開發上，算是歷史悠久但又保持長青的程式語言。
+					許多的程式語言或多或少都有借鏡 C 語言的設計思想與哲學，儘管如此若是在工作場合比較少使用 C 語言進行開發的話，
+					時間一久就會容易生疏。偶爾適時複習一下編譯器和 C 語言的使用方式也是一種調劑身心的方式？
+					本文就透過簡明 C 語言入門教學快速複習 C 語言語法的重要特性，方便讀者複習查詢使用。
+					</p>
+					
+				</th>
+			</tr>
+			<tr>
+				<th width="30%"><img src="picture/CLanguage.jpg"></th>
+				<th>
+				<h3 aligh="center">
+					<a href="/artical/tutoral/a_t_001.html">C語言基礎語法教學
+					</a></h3>
+					<p>C 語言是許多大專院校入門程式設計的必學程式語言也是一個通用型的程式語言，
+					廣泛應用於嵌入式系統軟體、應用開發上，算是歷史悠久但又保持長青的程式語言。
+					許多的程式語言或多或少都有借鏡 C 語言的設計思想與哲學，儘管如此若是在工作場合比較少使用 C 語言進行開發的話，
+					時間一久就會容易生疏。偶爾適時複習一下編譯器和 C 語言的使用方式也是一種調劑身心的方式？
+					本文就透過簡明 C 語言入門教學快速複習 C 語言語法的重要特性，方便讀者複習查詢使用。
+					</p>
+					
+				</th>
+			</tr>
+		</table>
+		<br><br><br>
 	</div>
-  </div>
+	
   
-  
-  <!--討論區-->
-  <div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://https-ha213176-github-io-myweb.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<script id="dsq-count-scr" src="//https-ha213176-github-io-myweb.disqus.com/count.js" async></script>
-
-
+	</div>
+ </div>
+	<button type="button" id="up"><a href="#"><img src="picture/upButton.jpg"></a></button>
+	<footer text-align="center" width="100%">
+		<p>2020 By 葉財豪</p>
+		<address>
+		<a href="mailto:ha213176@yahoo.com.tw">寄信給我</a>
+		</address>
+	</footer>
 
 </body>
 </html>

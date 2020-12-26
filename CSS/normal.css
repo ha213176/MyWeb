@@ -3,7 +3,10 @@
 	padding:20px;
 	border:3px #0000E0 solid;
 	margin:0px;
-	font-size:large
+	font-size:large;
+	border-radius:8px;
+	text-align:right;
+	
 }
 
 .Topl{
@@ -13,4 +16,24 @@
 
 .Topr{
 	text-align:right;
+}
+
+footer{
+	text-align:center;
+	position:relative;
+	bottom:10px;
+	background:#C2C2FF;
+	border="0px";
+	top:5px;
+	height:70px;
+}
+
+#up{
+	position:fixed;
+	right:5px;
+	bottom:5px;
+}
+
+body{
+	background:#FFF0D4;
 }
