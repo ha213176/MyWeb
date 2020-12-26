@@ -1,16 +1,4 @@
 
-.content{
-	background:white;
-	position:relative;
-	width:70%;
-	text-align:left;
-	border-radius:15px;
-	text-align:center;
-	left:5%;
-	right:1%;
-	top:15px;
-	
-}
 
 .ct_ele{
 	align:center;
@@ -25,6 +13,19 @@ li{
 	background:white;
 	border-radius:15px;
 	list-style:none;
+}
+
+.content{
+	background:white;
+	position:relative;
+	width:70%;
+	text-align:left;
+	border-radius:15px;
+	text-align:center;
+	left:5%;
+	right:1%;
+	top:15px;
+	
 }
 
 table{

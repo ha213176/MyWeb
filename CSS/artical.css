@@ -1,0 +1,11 @@
+.content{
+	background:white;
+	position:relative;
+	width:86%;
+	text-align:left;
+	border-radius:15px;
+	text-align:center;
+	left:7%;
+	right:7%;
+	top:15px;
+}
