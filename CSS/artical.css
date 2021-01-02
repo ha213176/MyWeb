@@ -1,21 +1,7 @@
-.content{
-	background:white;
-	position:relative;
-	width:86%;
-	text-align:left;
-	border-radius:15px;
-	left:7%;
-	right:7%;
-	top:15px;
-	bottom:50px;
+a{
+	text-decoration:none;
 }
 
-.txt{
-	position:relative;
-	left:25px;
-	top:30px
-}
-
-code{
-	text-align:left;
+li{
+	list-style:none;
 }

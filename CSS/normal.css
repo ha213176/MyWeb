@@ -10,26 +10,21 @@
 }
 
 
-.Topl{
-	
-	text-align:left;
+.Top_tag{
+	text-align:center;
+	width:10%;
 }
-
-.Topr{
-	text-align:right;
-}
-
 
 
 footer{
 	text-align:center;
 	position:relative;
-	bottom:10px;
 	background:#C2C2FF;
-	border="0px";
-	top:5px;
-	height:70px;
+	border:0px;
+	top:25px;
+	width:100%;
 }
+
 
 #up{
 	position:fixed;
@@ -39,4 +34,16 @@ footer{
 
 body{
 	background:#FFF0D4;
+}
+
+
+.content{
+	background:white;
+	position:relative;
+	width:70%;
+	border-radius:15px;
+	text-align:left;
+	left:3%;
+	right:1%;
+	top:5px;	
 }

@@ -6,35 +6,29 @@
 	<link rel="stylesheet" href="CSS/normal.css" type="text/css">
 	<script language="JavaScript">
 	function ShowTime(){
-	　var NowDate=new Date();
-	　var h=NowDate.getHours();
-	　var m=NowDate.getMinutes();
-	　document.getElementById('showbox').innerHTML = h+'時'+m+'分';
-	　setTimeout('ShowTime()',1000);
+		var time = document.getElementById('time');
+	    var color = ['red', 'green', '#FFFF0F', 'blue', 'black', 'gold', 'orange', 'gray', 'pink', 'maroon'];
+		var radom = Math.floor(Math.random() * color.length + 1) - 1; //隨機數
+	    time.style.color = color[radom]; //設置隨機顏色
+	　	var NowDate=new Date();
+	　	var h=NowDate.getHours();
+	　	var m=NowDate.getMinutes();
+	　	document.getElementById('showbox').innerHTML = h+'時'+m+'分';
+	　	setTimeout('ShowTime()',1000);
 	}
 	</script>
 </head>
 <body onload="ShowTime()">
+<table border = "0" id="table_body">
+<tr>
 	<div id="TopText">
-		<a href="index.html" class="Topl" align="left" size="10%">首頁</a>
-		<a href="index.html" class="Topr" align="right" size="10%">文章區</a>
+		<a href="index.html" class="Top_tag">首頁</a>
+		<a href="artical.html" class="Top_tag">文章</a>
+		<a href="note.html" class="Top_tag">筆記</a>
 	</div>
-	<!--<iframe src="./artical/index.html" height="100%" width="100%" id="frame_full" frameborder="0" scrolling="auto"></iframe>
-	-->
-	
-	<li width="30%" >
-		<ul>
-			現在時間:
-			<div id="showbox"></div>
-		</ul>
-		<br>
-		<ul>
-			<h4>總訪問次數</h4></div>
-			<div align='center><a href='https://www.hit-counts.com/'>
-			<img src='http://www.hit-counts.com/counter.php?t=MTQ1NTA5NA==' border='0' alt='logo redesign'>
-		</ul>
-	</li>
-	
+</tr>
+<tr>
+<th width="100%">	
 	
 <div>
   <div class="content" " id="content">
@@ -43,8 +37,8 @@
 		<caption><font size="22px" id="spacial">推薦文章</font></caption>
 			<tr>
 				<th width="30%"><img src="picture/CLanguage.jpg"></th>
-				<th>
-				<h3 aligh="center">
+				<th width="70%">
+				<h3 aligh="center"">
 					<a href="Clanguage/index.html">C語言基礎語法教學
 					</a></h3>
 					<p>C 語言是許多大專院校入門程式設計的必學程式語言也是一個通用型的程式語言，
@@ -60,7 +54,7 @@
 				<th width="30%"><img src="picture/github.png"></th>
 				<th>
 				<h3 aligh="center">
-					<a href="GithubPage/index.html">Github Page 使用
+					<a href="GithubPage/index.html">使用 Github Page 製作網頁 
 					</a></h3>
 					<p>寫好了專案我們通常會需要一台 Server 上傳我們的網站。有很多付費的，也有免費的，
 					但如果只是很單純的 html、js、css，那麼你可以使用 Github Pages 。通常，如果租用了主機，
@@ -85,20 +79,35 @@
 				</th>
 			</tr>
 		</table>
-		<br><br><br>
+		<br><br>
 	</div>
-	
-  
+</th>
+<th width="100%">
+	<li>
+		<ul>
+			現在時間:
+			<h1><font color="red" id="time">
+			<div id="showbox"></div></font>
+			</h1>
+		</ul>
+		<ul>
+			<h4>總訪問次數:</h4></div>
+			<div align="left"><a href='https://www.hit-counts.com/'>
+			<img src='http://www.hit-counts.com/counter.php?t=MTQ1NTIyNw==' border='0' alt='logo redesign'>
+		</ul>
+	</li>
+</th>
+</tr>
+</table>
 	</div>
  </div>
 	<button type="button" id="up"><a href="#"><img src="picture/upButton.jpg"></a></button>
-	<footer text-align="center" width="100%">
+	<footer text-align="center" width="100%" height="100%">
 		<p>2020 By 葉財豪</p>
 		<address>
 		<a href="mailto:ha213176@yahoo.com.tw">寄信給我</a>
 		</address>
 	</footer>
-
 </body>
 </html>
 

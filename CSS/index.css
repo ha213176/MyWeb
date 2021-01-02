@@ -23,9 +23,10 @@ li{
 	text-align:center;
 	left:5%;
 	right:1%;
-	top:15px;
+	top:5px;
 	
 }
+
 
 table{
 	position:relative;
@@ -44,4 +45,11 @@ table{
     -moz-transition:color 3s;
     -webkit-transition:color 3s;
     -o-transition:color 3s;    
+}
+
+#table_body{
+	
+}
+#up{
+	z-index:10;
 }
